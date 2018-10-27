@@ -23,8 +23,10 @@ int main()
         for (auto i = 0; i < sz; ++i)
         DUP(DUP(DUP(DUP(DUP(DUP(l = array[l];))))));
         auto endTime = std::chrono::high_resolution_clock::now();
-        fout << std::chrono::duration_cast<std::chrono::nanoseconds>(endTime - startTime).count() << "  " << size << std::endl;
-        std::cout << std::chrono::duration_cast<std::chrono::nanoseconds>(endTime - startTime).count() << "  " << size << std::endl;
+        fout << std::chrono::duration_cast<std::chrono::nanoseconds>(endTime - startTime).count()
+             << "  " << size << std::endl;
+        std::cout << std::chrono::duration_cast<std::chrono::nanoseconds>(endTime - startTime).count()
+                  << "  " << size << std::endl;
         delete[] array;
         size += 1024;
     }
