@@ -20,7 +20,7 @@ install:
   # C++17
   - sudo apt-get install -qq g++-7
   - sudo update-alternatives --install /usr/bin/g++ g++ /usr/bin/g++-7 90
-  - eval "CC=g++6 && CXX=g++7"
+  - eval "CC=/usr/bin/gcc && CXX=/usr/bin/g++"
 
 script:
   - chmod 777 ./cpplint.py
